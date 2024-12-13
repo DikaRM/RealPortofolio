@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portofolio Dika RM</title>
+</head>
+<style>
+  body{background-image: url(20241211_090906.jpg)
+}
+h1{
+  text-align: right;
+  width: 50%;
+  padding-left: 40%;
+  font-weight: bold;
+  font-size: 50px;
+}
+h1 img{
+  height: 200px;
+  border-radius: 50%;
+}
+#pro{
+  display: inline-block;
+  padding-left: 70%;
+  text-align: right;
+  padding-bottom: 100px;
+  border-radius: 50px;
+}
+.list div{
+  width: 50%;
+  height: 20vh;
+ font-weight: bold;
+color: black;
+opacity: 0.5;
+padding: 10px 150px;
+border-left: 1px solid black;
+}
+#two{
+  padding-left: 100px;
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  border: 5px solid white;
+  text-align: center;
+  border-radius: 5px;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.nav a{
+  color: black;
+  padding: 10px 100px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.nav a:hover{
+  opacity: 1.5;
+  font-weight: bold;
+}
+.nav strong{
+  padding-top: 10px;
+}
+.nav img{
+  color: white;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bolder;
+  height: 30px;
+  border-radius: 50%;
+}
+.list div img{
+  height: 200px;
+  border-radius: 50%;
+  opacity: 1;
+}
+@media (max-width:768px){
+  body{
+    background-image: url(hp.jpg)
+  }
+  h1{
+    font-size: 15px;
+  }
+  .nav{
+    height: 30px;
+    font-size: 10px;
+    width: 100vw;
+  }
+  .nav a{
+    font-size: 7px;
+    padding:10px 30px;
+  }
+  .list div{
+    height:50%;
+    padding: 25px 25px;
+    opacity:1;
+  }
+  .list div a h3{
+    font-size: 15px;
+  }
+  #pro{
+    padding-left: 40%;
+  }
+  .list div img {
+    height: 100px;
+    border-radius: 50%;
+    opacity: 1;
+  }
+  #two {
+    padding-left: 50px;
+  }
+}
+</style>
+<body>
+  <div class="nav">
+    <img src="20241210_165457.jpg"><strong>Dika RM </strong>
+    <a href="About.html">About </a>
+    <a href="contact.html">Contact</a>
+    <a href="#skill">Skills</a>
+  </div>
+  <h1>Portofolio Dika RM Fullstack Developer</h1>
+  <img src="Poto.jpg" id="pro">
+  <h2>List Menu</h2>
+  <div class="list">
+  <a href="About.html"><div>
+    <img src="20241108_023504.jpg" >
+    <h3>Profile & Skill </h3>
+  </div></a>
+  <a href="contact.html"><div id="two">
+    <img src="03d0a5e6-615b-4e2c-9858-a3dcab685ad6.jpeg">
+    <h3>Contact To Me</h3>
+  </div></a>
+  </div>
+</body>
+</html>

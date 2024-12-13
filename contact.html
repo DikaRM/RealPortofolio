@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+body{
+  background-image: url(20241211_090906.jpg)
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.nav a{
+  color: black;
+  padding: 10px 100px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.nav a:hover{
+  opacity: 1.5;
+  font-weight: bold;
+}
+.nav strong{
+  padding-top: 10px;
+}
+.nav img{
+  color: white;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bolder;
+  height: 30px;
+  border-radius: 50%;
+}
+
+  #contact{
+  border-radius: 5px;
+  border-bottom: 2px solid black;
+  text-align: center;
+  
+}
+#contact h2{
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+}
+
+label{
+  color: white;
+  display: block;
+  font-size: 25px;
+  padding-top: 50px;
+  text-transform:uppercase;
+ font-weight: bold;
+}
+input{
+  width: 50%;
+  background: transparent;
+  border: none;
+  border: 1px solid black;
+  text-transform:uppercase;
+  font-weight: bold;
+  color: white;
+}
+button{
+  text-align: center;
+  background: black;
+  border-radius: 25%;
+  border: none;
+  width: 20%;
+  height: 2%;
+  text-transform:uppercase;
+  font-weight: bold;
+  color: white;
+}
+#pad{
+  padding-bottom: 200px;
+}
+#post {
+  display: none;
+  animation: animate 1s linear infinite;
+  transition: 1s;
+}
+textarea {
+  background: transparent;
+  border-color: black;
+  color: white;
+  he
+}
+.footer{
+  background: black;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.footer img{
+  border-radius: 50%;
+  height: 150px;
+  padding: 50px 10px;
+}
+.footer a{
+  text-decoration: none;
+  color: white;
+}
+.footer h3{
+font-weight: bold;
+letter-spacing: 15px;
+font-size: 8px;
+}
+.footer h4{
+  font-size: 8px;
+}
+.footer h6{
+  letter-spacing: 10px;
+}
+#msg{
+  height:50%;
+ width: 50%;
+padding: 200px 150px;
+position: absolute;
+top: 0;
+left: -1005%;
+transition: 1s;
+}
+#msg.activ{
+  left:5%;
+}
+@media (max-width:768px){
+input{
+    border-bottom: 2px solid white;
+    width: 80%;
+  }
+  button{
+    width: 100px;
+    height: 40px;
+    font-size: 7px;
+    border: none;
+    border-radius: 25%;
+  }
+    .nav{
+    height: 30px;
+    font-size: 10px;
+    width: 100vw;
+  }
+  .nav a{
+    font-size: 7px;
+    padding:10px 30px;
+  }
+  #contact{
+    text-align: left;
+  }
+  #contact h2{
+    width: 20%;
+  }
+  .footer img{height: 50px;
+  padding: 10px 5px;
+}
+.footer {
+  font-size: 5px;
+  letter-spacing: 1px;
+}
+  }
+</style>
+<body>
+<div class="nav">
+  <img src="20241210_165457.jpg"><strong>Dika RM </strong>
+  <a href="About.html">About </a>
+  <a href="#contact">Contact</a>
+  <a href="About.html #skill">Skills</a>
+</div>
+
+<div id="contact">
+  <h2>Kontak Saya</h2>
+  <h3>Terima Kasih</h3>
+  <h4>Atas </h4>
+  <h5>Saran Dan Pesan Anda</h5>
+  <img src="20241210_102816.png" id="msg">
+  <form action="" onsubmit="return send()">
+  <label for="nama">Nama Anda</label>
+  <input type="text" id="nama" required>
+  <label for="no">Nomor HP</label>
+  <input type="number" id="no" min="12">
+  <div id="pad"></div>
+    <label for="area">Ketikan PesanMu</label>
+  <textarea  id="area" cols="30" rows="10"></textarea>
+  <center><button type="submit" id="submit"><h1 id="kirim">Kirim </h1><br><h1 id="post">Loading</h2></button></center>
+  
+  <center>
+  <h3 id="giv"></h3>  
+  </center>
+  
+  
+  </form>
+</div>
+<div class="footer">
+  <h3>Terima Kasih Telah Berkunjung Di Website Dika RM Dev</h3>
+  <h4>Ikuti Media Sosial Dika RM Dev</h4>
+  <a href="https://m.youtube.com"><img src="yt.jpeg">YouTube</a>
+  <a href="https://www.tiktok.com"><img src="cabdf3e6-2320-4aac-9527-483a0d11c62f.jpeg">Tiktok</a>
+  <a href="https://www.instagram.com/"><img src="1e80ec36-5f2d-4d07-ac89-7aabb4d45a02.jpeg">Instagram </a>
+  <h6>©COPYRIGHT ARE RESERVED BY THIS AUTHOR WEBSITE IS DIKA RM FULLSTACK DEVELOPER</h6>
+</div>
+<script>
+  const nama = document.getElementById('nama').value;
+  const no = document.getElementById('no').value;
+  const area = document.getElementById('area').value;
+  const fu = [nama]
+  console.log(fu[0])
+  document.getElementById('submit').addEventListener('click', function() {
+    const post = document.getElementById('post');
+    const kirim = document.getElementById('kirim');
+    const giv = document.getElementById('giv');
+    const form = document.querySelector('#contact form');
+    const msg = document.getElementById('msg');
+    post.style.display = 'block';
+    kirim.style.display = 'none';
+    console.log(fu[0])
+    setTimeout(() => {
+      post.style.display = 'none'
+      kirim.style.display = 'block';
+
+    }, 3000)
+  })
+
+  function send() {
+    const msg = document.getElementById('msg');
+    contact.style.display = 'none'
+    msg.classList.toggle('activ')
+    const url = 'https://wa.me/6283849190510?text=';
+    window.open(url, 'blank')
+    return false;
+  }
+</script>
+</body>
+
+</html>

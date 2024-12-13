@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+body{
+  overflow-x: hidden;
+  background-image: url(20241211_090906.jpg)
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.nav a{
+  color: black;
+  padding: 10px 100px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.nav a:hover{
+  opacity: 1.5;
+  font-weight: bold;
+}
+.nav strong{
+  padding-top: 10px;
+}
+.nav img{
+  color: white;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bolder;
+  height: 30px;
+  border-radius: 50%;
+}
+
+#iden{
+  border-radius: 50%;
+}
+h2{
+  text-align: center;
+  font-weight: bold;
+}
+.hero{
+  position: absolute;
+  top: 10%;
+ left: 50%;
+text-transform:uppercase;
+font-weight:bold;
+font-size: 20px;
+}
+.hero h3{
+  text-align: center;
+}
+.hero h1{
+  text-align: left;
+}
+
+
+
+#about{
+  background: transparent;
+  color: white;
+  border-radius: 5px;
+  padding-bottom: 50px;
+  display: none;
+}
+a{
+  text-transform: uppercase;
+  
+  color: black ;
+  text-decoration: none;
+}
+a h2{
+text-transform: uppercase;
+border-bottom: 2px solid white;
+color: black;
+  width: 50%;
+  
+}
+#about h5{
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+#about.active{
+  display: block;
+}
+#skill{
+  padding-top: 50px;
+  border-radius: 5px;
+  text-align: center ;
+  display: none;
+}
+#skill img{
+  height: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+}
+#skill.active{
+  display: block;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+h2{
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  width: 50%;
+}
+#html,#css, #js, #php, #python, #bts, #mysql, #sql, #gdevelop{
+  padding-right: 100px;
+  animation:animate 10s linear infinite;
+}
+@keyframes animate {
+  0%{
+    transform: translateX(0)
+  }
+  18%{
+    transform: translateX(15%)
+  }
+  25% {
+    transform: translateX(25%)
+  }
+  28% {
+    transform: translateX(15%)
+  }
+  35% {
+    transform: translateX(0%)
+  }
+  38% {
+    transform: translateX(-15%)
+  }
+  48% {
+    transform: translateX(-25%)
+  }
+  68% {
+    transform: translateX(-15%)
+  }
+  99%{
+    transform: translateX(0)
+  }
+}
+@media (max-width:768px){
+  body{
+    background-image: url(hp.jpg)
+  }
+  .nav{
+    height: 30px;
+    font-size: 10px;
+    width: 100vw;
+  }
+  .nav a{
+    font-size: 7px;
+    padding:10px 30px;
+  }
+  #iden{
+    height: 150px;
+  }
+  .hero{
+    font-size: 10px;
+  }
+  .hero h3{
+    font-weight: bold;
+    color: black;
+  }
+  h2{
+    width: 50%;
+  }
+  input{
+    border-bottom: 2px solid white;
+  }
+    #skill img {
+      height: 50px;
+    }
+  #about {
+    padding-bottom: 110px;
+  }
+  #about h3,  #about h4,  #about h5,  #about h6{
+    color: black;
+    font-style: italic;
+    font-size: 5px;
+  }}
+  </style>
+<body>
+<div class="nav">
+  <img src="20241210_165457.jpg"><strong>Dika RM </strong>
+  <a href="#about">About </a>
+  <a href="contact.html">Contact</a>
+  <a href="#skill">Skills</a>
+</div>
+<img src="20241108_023504.jpg" height="400px" id="iden">
+<div class="hero">
+  <h1>Dika RM</h1>
+  <h3>Fullstack Developer</h3>
+</div>
+  <a href="#" id="abait"><h2>Tentang Saya</h2></a>
+<div id="about">
+  <h5>Nama Lengkap:Andika Rafif Maulana</h5>
+  <h5>Tempat Dan Tanggal Lahir:Jakarta,02 Februari 2008</h5>
+    <h5>Alamat Rumah: Jl.Baru Pilar II Kelurahan Bubulak,Bogor Barat RT04/RW01 Depan Nomor Rumah 33</h5>
+    <h5>Hobby:Main Bola,Coding,Bersepeda</h5>
+      <h5>Tujuan : Agar Membuat Menaikan Derajat Orang Tua Saya Dimata Orang Banyak</h5>
+      <h5>Latar Belakang Pendidikan : SMKN 1 Ciomas </h5>
+</div>
+ <a href="#" id="skull"><h2>Kemampuan Saya</h2></a>
+<div id="skill">
+  <h3>
+    Di Kompetensi Saya Dapat
+  </h3>
+  <h3>Kini Saya Baru Mempelajari sekitar 9 Bahasa Pemrograman</h3>
+  <img src="44ccdef6-0cdb-42bf-bfbb-9766d91916d2.jpeg" id="html">
+  <img src="7535ee89-545e-4162-9f2a-5c505d8ce68d.jpeg" id="css">
+  <img src="d2e43609-b2de-4c81-a841-95b3c8608b18.jpeg" id="js">
+  <br><img src="57131d65-38c2-40dc-a3d9-7d62367290ba.jpeg" id="php">
+  <img src="62e0d08f-f2cf-41ff-ad5f-b368f97dba6e.jpeg" id="python">
+  <img src="b59a3e2e-2bcf-4255-bf56-38a7f799aaa0.jpeg" id="bts">
+  <br><img src="" id="mysql">
+  <img src="e7fa36d2-1a3d-4ce1-bcba-62e1056a4388-removebg-preview.png" id="sql">
+  <img src="" id="gdevelop">
+
+</div>
+<script>
+let bola = document.querySelector('#skill');
+  let skull = document.getElementById('skull');
+  skull.onclick = () => {
+    bola.classList.toggle('active');
+    skull.style.width='100%'
+  }
+  let kartu = document.querySelector('#about');
+  document.getElementById('abait').onclick = () => {
+    kartu.classList.toggle('active');
+  }
+</script>
+</body>
+
+</html>
